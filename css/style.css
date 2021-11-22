@@ -68,6 +68,7 @@ a {
     z-index: 1030;
     border-bottom: solid 2px #cd0000;
     background-color: #242424;
+    
     color: #cdcdcd;
     top: 57px;
 }
@@ -86,6 +87,25 @@ height: 16px;
     padding: 0.45rem 0 0.45rem 3rem;
     box-sizing: border-box;
 }
+.header__burger-menu-item button{
+    color: #fff;
+    border-radius: 0;
+    padding: 0.3rem 1.4rem;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    font-weight: bolder;
+    background-color: #242424;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+}
+
+
+
+
+
+
+
+
 .header__logo{
     width: 153px;
     fill: #fff;
