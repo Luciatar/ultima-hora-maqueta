@@ -1,11 +1,17 @@
-let burger= document.querySelector('.header__burger')
-let burgerMenu= document.querySelector('.header__burger-menu')
-burger.addEventListener("click", function(){toggleBurgerMenu()},false)
-burgerMenu.classList.add("collapse")
-function toggleBurgerMenu(){
-    if(burgerMenu.classList.contains("collapse")){
-        burgerMenu.classList.remove("collapse")
-    }else{
-        burgerMenu.classList.add("collapse")
+let burger = document.querySelector('#nav-icon2')
+let burgerMenu = document.querySelector('.header__burger-menu')
+let filter= document.querySelector('.background-filter')
+burger.addEventListener("click", function () { toggleBurgerMenu() }, false)
+filter.addEventListener("click", function () { toggleBurgerMenu() }, false)
+
+function toggleBurgerMenu() {
+    if (burgerMenu.classList.contains("unCollapse")) {
+        burgerMenu.classList.remove("unCollapse")
+        burger.classList.remove("open")
+        filter.classList.remove("apply")
+    } else {
+        burgerMenu.classList.add("unCollapse")
+        burger.classList.add("open")
+        filter.classList.add("apply")
     }
 }
