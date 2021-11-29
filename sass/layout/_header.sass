@@ -1,0 +1,201 @@
+/* Header */
+.header__region 
+  display: flex
+  position: relative
+  background-color: #e6e6e6
+  font-size: 1rem
+  font-weight: 400
+  line-height: 1.5
+  z-index: 3
+
+.header__region ul 
+  list-style-type: none
+  display: flex
+  margin: 0
+
+.header__region li 
+  padding: 4.8px 8px 4.8px 8px
+  font-size: 11.2px
+
+
+.header__region ul li::after 
+  content: " |"
+  font-size: 10px
+  padding: 0 0 0 8px
+
+
+.header__logo-container 
+  background: $red
+  display: grid
+  place-items: center
+  height: 98px
+  position: relative
+  z-index: 3
+
+
+.header__burger 
+  fill: #fff
+
+  position: relative
+
+
+.header__logo 
+  width: 298px
+  fill: #fff
+
+/* MENU DESPLEGABLE */
+.unCollapse 
+  transform: translateY(0%) !important
+  overflow: hidden
+
+
+
+
+.header__burger-menu 
+  position: absolute
+  width: 500px
+  transform: translateY(-100%)
+  border-bottom: solid 2px #cd0000
+  background-color: #242424
+  color: #cdcdcd
+  top: 123px
+  left: 381px
+  transition: all 0.25s
+  z-index: 2
+
+.header__burger-menu svg 
+  position: absolute
+  top: 10px
+  left: 20px
+  width: 16px
+  height: 16px
+
+.header__burger-menu input 
+  width: 100%
+  background-color: #333
+  border: 0
+  color: #fff
+  padding: 0.45rem 0 0.45rem 3rem
+  box-sizing: border-box
+
+.header__burger-menu-item button 
+  color: #fff
+  border-radius: 0
+  padding: 0.3rem 1.4rem
+  text-transform: uppercase
+  text-align: left
+  width: 100%
+  font-weight: bolder
+  background-color: #242424
+  border: 1px solid rgba(255, 255, 255, 0.233)
+
+.header__burger-menu-item button::after 
+  content: "+"
+  color: #cd0000
+  float: right
+
+.header__burger-menu-socials 
+  display: flex
+  margin-top: 8px
+  padding: 16px 16px 0
+
+.header__burger-menu-socials span 
+  margin-right: 0.4rem
+  font-size: 12.8px
+
+.socials-fb,
+.socials-yt,
+.socials-tw,
+.socials-in,
+.socials-ig,
+.socials-tg,
+.socials-rss 
+  width: 28px
+  height: 28px
+  display: inline-block
+  background: transparent no-repeat center center
+  margin-right: 0.3rem
+
+.socials-fb 
+  background-image: url(../svg/icons.svg#facebook-view)
+
+.socials-yt 
+  background-image: url(../svg/icons.svg#youtube-view)
+
+.socials-tw 
+  background-image: url(../svg/icons.svg#twitter-view)
+
+.socials-in 
+  background-image: url(../svg/icons.svg#linkedin-view)
+
+.socials-ig 
+  background-image: url(../svg/icons.svg#instagram-view)
+
+.socials-tg 
+  background-image: url(../svg/icons.svg#telegram-view)
+
+.socials-rss 
+  background-image: url(../svg/icons.svg#rss-view)
+
+
+.header__burguer-menu-contact 
+  padding: 16px 16px
+
+.header__burguer-menu-contact-publicity 
+  border-right: solid 1px #d6807f
+  padding-right: 0.8rem
+  margin-right: 0.5rem
+
+.header__burguer-menu-contact-contact 
+  padding-left: 0.8rem
+
+/* Subscribe */
+.header__subscribe 
+  display: flex
+  gap: 8px
+
+.subscribe__icon a 
+  display: flex
+  background-color: #e6e6e6
+  border-color: #e6e6e6
+
+.subscribe__icon a svg 
+  width: 25px
+
+.subscribe__button button 
+  height: 100%
+  background-color: #ffc700
+  font-family: "Times New Roman"
+  font-style: italic
+  font-weight: bold
+
+
+/* scroller */
+.scroller 
+  width: 100%
+  height: 4px
+
+.scroller__progress 
+  width: 5%
+  height: 100%
+  background: var(--red)
+  filter: brightness(75%)
+
+
+/* Quick acces */
+.header__quick-acces 
+  display: grid
+  max-height: 2.4rem
+  place-items: center
+  border-bottom: solid 2px #ccc
+  background-color: #e6e6e6
+  fill: #444
+  color: #323232
+  font-style: "Roboto Condensed"
+  font-weight: 700
+  font-size: 15.36px
+
+.header__quick-acces-element 
+  display: flex
+
+
