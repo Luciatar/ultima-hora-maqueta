@@ -15,3 +15,12 @@ function toggleBurgerMenu() {
         filter.classList.add("apply")
     }
 }
+
+window.onscroll = function() { showProgress()};
+
+function showProgress() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.querySelector(".scroller__progress").style.width = scrolled + "%";
+}
